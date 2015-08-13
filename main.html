@@ -1,0 +1,37 @@
+<html>
+<head>
+    <style>
+        body.dark{
+            background: black;
+        }
+        body.light{
+            background: white;
+        }
+        body.dark p{
+            color: grey;
+            font-size:16px;
+        }
+        body.light p{
+            color: black;
+            font-size:20px;
+        }
+    </style>
+</head>
+<body class="light">
+ <p class="my-text">
+    lorem ipsum dollar.lorem ipsum dollar.lorem ipsum dollar.lorem ipsum dollar.
+    lorem ipsum dollar.lorem ipsum dollar.lorem ipsum dollar.lorem ipsum dollar.
+    lorem ipsum dollar.lorem ipsum dollar.lorem ipsum dollar.lorem ipsum dollar.
+    lorem ipsum dollar.lorem ipsum dollar.lorem ipsum dollar.lorem ipsum dollar.
+ </p>
+ <script>
+     (function(){
+         var ipc = require('ipc');
+         ipc.on("changeTheme",function(message){
+             var themeName = message.styleClass;
+             document.body.className = themeName;
+         });
+     })();
+ </script>
+</body>
+</html>

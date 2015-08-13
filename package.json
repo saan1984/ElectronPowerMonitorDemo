@@ -1,0 +1,21 @@
+{
+  "name": "ElectronPowerMonitorDemo",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "version": "0.0.1",
+  "description": "ElectronPowerMonitorDemo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saan1984/ElectronPowerMonitorDemo.git"
+  },
+  "author": "Sandeep Kumar Patel",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-prebuilt": "^0.28.3"
+  },
+  "dependencies": {
+    "node-notifier": "^4.2.3"
+  }
+}
